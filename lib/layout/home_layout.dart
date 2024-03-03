@@ -1,3 +1,6 @@
+import 'package:Akhbar/screens/new_tab/new_tab.dart';
+import 'package:Akhbar/screens/widgets/back_ground_image/back_ground_image.dart';
+import 'package:Akhbar/screens/widgets/home_body/home_body.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -38,87 +41,12 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: MediaQuery.of(context).size.width,
-      height: MediaQuery.of(context).size.height,
-      decoration: const BoxDecoration(
-        image: DecorationImage(
-          image: AssetImage("assets/image/pattern.jpg"),
-          fit: BoxFit.fill,
-        ),
-      ),
-      child: Scaffold(
-        backgroundColor: Colors.transparent,
+    return MyBackgroundImage(
+      body: Scaffold(
         appBar: AppBar(
-          backgroundColor: const Color(0xff42505C),
-          shape: const RoundedRectangleBorder(
-            borderRadius: BorderRadius.vertical(
-              bottom: Radius.circular(50),
-            ),
-          ),
-          title: Center(
-            child: Text(
-              "Akhbar",
-              style: GoogleFonts.aBeeZee(
-                textStyle: const TextStyle(fontSize: 30, color: Colors.white),
-              ),
-            ),
-          ),
+          title: Text("Akhbar"),
         ),
-        body: Column(
-          children: [
-            SizedBox(
-              height: MediaQuery.of(context).size.height * 0.2,
-            ),
-            Container(
-              alignment: Alignment.center,
-              child: const Text(
-                "Pick your category of interest",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 20,
-                ),
-              ),
-            ),
-            SizedBox(
-              height: MediaQuery.of(context).size.width * 0.05,
-            ),
-            InkWell(
-              onTap: () {
-                Navigator.pushReplacementNamed(context, SplashScreen.routeName);
-              },
-              child: SizedBox(
-                height: MediaQuery.of(context).size.height * 0.3,
-                width: MediaQuery.of(context).size.width * 0.7,
-                child: PageView.builder(
-                  itemBuilder: (context, index) {
-                    return Subject(
-                      title: title[index],
-                      image: image[index],
-                      color: colors[index],
-                    );
-                  },
-                  itemCount: title.length,
-                  controller: _controller,
-                ),
-              ),
-            ),
-            SizedBox(
-              height: MediaQuery.of(context).size.width * 0.02,
-            ),
-            SmoothPageIndicator(
-              controller: _controller,
-              count: title.length,
-              effect: SlideEffect(
-                activeDotColor: Colors.black54,
-                dotColor: Colors.grey.withOpacity(.5),
-                dotHeight: 15,
-                dotWidth: 15,
-              ),
-            ),
-            const Spacer(),
-          ],
-        ),
+        body: HomeBody(),
       ),
     );
   }
