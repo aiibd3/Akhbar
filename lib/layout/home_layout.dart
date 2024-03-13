@@ -12,32 +12,6 @@ class HomeScreen extends StatelessWidget {
 
   static String routeName = "homeScreen";
 
-  final _controller = PageController();
-
-  final List<Color> colors = [
-    Colors.red,
-    Colors.orange,
-    Colors.yellow,
-    Colors.green,
-    Colors.blue,
-    Colors.indigo,
-  ];
-  final List<String> title = [
-    "Sports",
-    "Politics",
-    "Health",
-    "business ",
-    "Environment",
-    "Science",
-  ];
-  final List<String> image = [
-    "assets/image/Sports.png",
-    "assets/image/bussines.png",
-    "assets/image/Elections.png",
-    "assets/image/Doctors.png",
-    "assets/image/Tree.png",
-    "assets/image/science.png",
-  ];
 
   @override
   Widget build(BuildContext context) {

@@ -17,12 +17,12 @@ class HomeBody extends StatelessWidget {
     Colors.indigo,
   ];
   final List<String> title = [
-    "Sports",
+    "sports",
     "Politics",
-    "Health",
-    "business ",
-    "Environment",
-    "Science",
+    "health",
+    "business",
+    "entertainment",
+    "science",
   ];
   final List<String> image = [
     "assets/image/Sports.png",
@@ -55,24 +55,27 @@ class HomeBody extends StatelessWidget {
         SizedBox(
           height: MediaQuery.of(context).size.width * 0.05,
         ),
-        InkWell(
-          onTap: () {
-            Navigator.pushReplacementNamed(context, NewsTab.routeName);
-          },
-          child: SizedBox(
-            height: MediaQuery.of(context).size.height * 0.3,
-            width: MediaQuery.of(context).size.width * 0.7,
-            child: PageView.builder(
-              itemBuilder: (context, index) {
-                return Subject(
+        SizedBox(
+          height: MediaQuery.of(context).size.height * 0.3,
+          width: MediaQuery.of(context).size.width * 0.7,
+          child: PageView.builder(
+            itemBuilder: (context, index) {
+              return InkWell(
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => NewsTab(title: title[index],)));
+                },
+                child: Subject(
                   title: title[index],
                   image: image[index],
                   color: colors[index],
-                );
-              },
-              itemCount: title.length,
-              controller: _controller,
-            ),
+                ),
+              );
+            },
+            itemCount: title.length,
+            controller: _controller,
           ),
         ),
         SizedBox(

@@ -5,7 +5,7 @@ class Subject extends StatelessWidget {
       {super.key,
       required this.image,
       required this.title,
-      required this.color});
+      required this.color,});
 
   final String image;
   final String title;
