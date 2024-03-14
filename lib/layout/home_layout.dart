@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
     return MyBackgroundImage(
       body: Scaffold(
         appBar: AppBar(
-          title: Text("Akhbar"),
+          title: const Text("Akhbar"),
         ),
         body: HomeBody(),
       ),

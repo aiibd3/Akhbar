@@ -1,13 +1,9 @@
-
 import 'package:Akhbar/screens/new_tab/new_tab.dart';
-import 'package:Akhbar/screens/widgets/back_ground_image/back_ground_image.dart';
 import 'package:Akhbar/screens/widgets/subject.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class HomeBody extends StatelessWidget {
-
   final List<Color> colors = [
     Colors.red,
     Colors.orange,
@@ -33,7 +29,6 @@ class HomeBody extends StatelessWidget {
     "assets/image/science.png",
   ];
   final _controller = PageController();
-
 
   @override
   Widget build(BuildContext context) {
@@ -63,9 +58,13 @@ class HomeBody extends StatelessWidget {
               return InkWell(
                 onTap: () {
                   Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => NewsTab(title: title[index],)));
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => NewsTab(
+                        title: title[index],
+                      ),
+                    ),
+                  );
                 },
                 child: Subject(
                   title: title[index],

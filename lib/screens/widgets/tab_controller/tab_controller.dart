@@ -10,7 +10,7 @@ import 'package:lottie/lottie.dart';
 class TabControllerNav extends StatefulWidget {
   List<Sources> sources;
 
-  TabControllerNav(this.sources);
+  TabControllerNav(this.sources, {super.key});
 
   @override
   State<TabControllerNav> createState() => _TabControllerNavState();
@@ -26,6 +26,8 @@ class _TabControllerNavState extends State<TabControllerNav> {
         DefaultTabController(
             length: widget.sources.length,
             child: TabBar(
+              dividerColor: Colors.transparent,
+              indicatorColor: Colors.transparent,
               isScrollable: true,
               onTap: (index) {
                 selectedIndex = index;
@@ -36,10 +38,10 @@ class _TabControllerNavState extends State<TabControllerNav> {
                       child: TabItem(source,
                           widget.sources.indexOf(source) == selectedIndex)))
                   .toList(),
-            )),
+            ),),
         FutureBuilder(
-            future:
-                ApiManger.getNewsData(widget.sources[selectedIndex].id ?? ""),
+            future: ApiManger.getNewsData(
+                sourceId: widget.sources[selectedIndex].id ?? ""),
             builder: (context, snapshot) {
               if (snapshot.connectionState == ConnectionState.waiting) {
                 return Center(
@@ -61,13 +63,14 @@ class _TabControllerNavState extends State<TabControllerNav> {
                   child: ListView.builder(
                     itemBuilder: (context, index) {
                       return InkWell(
-                        onTap: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => NewsDetailsScreen(articles:news[index] ,)));
-
-                        },
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => NewsDetailsScreen(
+                                          articles: news[index],
+                                        ),),);
+                          },
                           child: NewsCard(articles: news[index]));
                     },
                     itemCount: news.length,
