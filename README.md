@@ -5,8 +5,10 @@ A new Flutter project.
 ## Getting Started
 
 
-![image](https://github.com/aiibd3/Akhbar/assets/114152030/57cfae97-3384-4561-a6c5-782128136a1e)
+![image](https://github.com/aiibd3/Akhbar/assets/114152030/57cfae97-3384-4561-a6c5-782128136a1e)      ![image](https://github.com/aiibd3/Akhbar/assets/114152030/57cfae97-3384-4561-a6c5-782128136a1e)
 
+
+![image](https://github.com/aiibd3/Akhbar/assets/114152030/57cfae97-3384-4561-a6c5-782128136a1e)
 
 This project is a starting point for a Flutter application.
 
