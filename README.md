@@ -23,12 +23,3 @@
 ![Screenshot 2024-03-15 152218](https://github.com/aiibd3/Akhbar/assets/114152030/cf37bed7-da35-49a3-9ea3-7f91ae613afa)   ![Screenshot 2024-03-15 152327](https://github.com/aiibd3/Akhbar/assets/114152030/20b2158b-5fb8-43f6-bd41-9b155fcee0bd)
 
 
-
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
