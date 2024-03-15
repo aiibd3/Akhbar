@@ -1,11 +1,11 @@
 # akhbar
 
 ## Features
--Show trending news
--Show news details
--Show reviews for movies
--Show actor details
--Can search on any news
+- Show trending news
+- Show news details
+- Show reviews for movies
+- Show actor details
+- Can search on any news
 
 ## About project
 Using firebase as database
