@@ -2,16 +2,12 @@
 
 ## Features
 - Article Feed: Implement a feed or homepage where users can discover the latest news articles. This feed should display articles in a visually engaging manner and allow users to scroll through headlines.
+- 
 - Article Categories: Organize news articles into different categories such as world news, sports, technology, entertainment, etc. This allows users to filter articles based on their interests.
+- 
 - Search Functionality: Implement a search feature that enables users to search for specific articles or topics of interest.
+- 
 - Article Details: When users click on a news article, display the full article content.
-
-
-## About project
-Using firebase as database
-Applying MVVM archticture pattern
-Using bloc as statemanagment
-Using http package to call API
 
 ## Getting Started
 
