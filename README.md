@@ -5,11 +5,11 @@ A new Flutter project.
 ## Getting Started
 
 
-![splash](https://github.com/aiibd3/Akhbar/assets/114152030/29e42a1e-f1b5-4e0b-bf4f-c86ad1580bef)
+![splash](https://github.com/aiibd3/Akhbar/assets/114152030/29e42a1e-f1b5-4e0b-bf4f-c86ad1580bef)   ![categry](https://github.com/aiibd3/Akhbar/assets/114152030/fd7c52fc-5fc0-48a8-811f-2cf56caf6e90)    ![choose](https://github.com/aiibd3/Akhbar/assets/114152030/c8791245-1c9e-44c9-8287-08aa1fb349d0)
 
-![categry](https://github.com/aiibd3/Akhbar/assets/114152030/fd7c52fc-5fc0-48a8-811f-2cf56caf6e90)
 
-![choose](https://github.com/aiibd3/Akhbar/assets/114152030/c8791245-1c9e-44c9-8287-08aa1fb349d0)
+
+
 
 ![home](https://github.com/aiibd3/Akhbar/assets/114152030/f661e4b4-84ba-4b4c-a0dd-9ea731006255)
 
